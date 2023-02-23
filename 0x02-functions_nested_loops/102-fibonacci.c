@@ -5,6 +5,7 @@
  * separated by a comma followed by a space.
  *
  * Return: Always 0.
+ *
  */
 int main(void)
 {
@@ -20,7 +21,9 @@ int main(void)
 		fib2 = sum;
 
 		if (count == 49)
-			(printf("\n")
+			printf("\n");
+		else
+			printf(",");
 	}
 
 	return (0);
