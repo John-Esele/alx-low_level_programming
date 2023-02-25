@@ -1,21 +1,26 @@
 #include "main.h"
 
 /**
- * more_numbers - print more numbers
+ * print_number - prints an integer
+ * @n: integer to be printed
  */
-
-void more_numbers(void)
+void print_number(int n);
 {
-	int i, j;
+	unsigned int n1;
 
-	for (i = 1 i <= 10; i++)
+	if (n < 0)
 	{
-		for (j = 0; j <= 14; j++)
-		{
-			if (j >= 10)
-				_putchar('1');
-			_putchar (j % 10 + '0');
-		}
-		_putchar('\n');
+		n1 = -n;
+		_putchar('-');
+	} else
+	{
+		n1 = n;
 	}
+
+	if(n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+
+	_putchar((n1 % 10) + '0');
 }
